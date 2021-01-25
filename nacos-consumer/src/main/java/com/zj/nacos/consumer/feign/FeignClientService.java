@@ -1,4 +1,4 @@
-package com.zj.nacos.consumer.fegin;
+package com.zj.nacos.consumer.feign;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -9,6 +9,11 @@ import org.springframework.web.bind.annotation.PathVariable;
  */
 @FeignClient(name = "nacos-config-test")
 public interface FeignClientService  {
+        /**
+         * 测试feign
+         * @param name 测试
+         * @return 回显字符串
+         */
         @GetMapping("/config/discovery/{name}")
-        public String test(@PathVariable String name);
+        String test(@PathVariable String name);
 }

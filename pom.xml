@@ -22,6 +22,7 @@
         <module>goods-provider</module>
         <module>nacos-consumer</module>
         <module>nacos-api</module>
+        <module>nacos-api</module>
     </modules>
     <properties>
         <java.version>1.8</java.version>
@@ -58,6 +59,10 @@
             <groupId>io.springfox</groupId>
             <artifactId>springfox-swagger-ui</artifactId>
             <version>${swagger.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
     </dependencies>
 </project>
