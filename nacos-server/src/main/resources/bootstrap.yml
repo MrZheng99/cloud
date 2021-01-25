@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: nacos-config-test
+  profiles:
+    active: dev
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.137.1:8848
+      config:
+        server-addr: 192.168.137.1:8848
+        prefix: nacos-config-test
+        group: DEFAULT_GROUP
+        file-extension: yaml
+server:
+  port: 18001
+  servlet:
+    context-path: /config
